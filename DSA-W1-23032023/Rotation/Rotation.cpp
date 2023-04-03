@@ -3,13 +3,14 @@
 #include <iomanip>
 using namespace std;
 
-void input(int a[], int n) {
-    for (int i = 0; i < n; i++) {
+void input(int a[], int n) 
+{
+    for (int i = 0; i < n; i++) 
         cin >> a[i];
-    }
 }
 
-void rotate(int a[], int n, int k) {
+void rotate(int a[], int n, int k) 
+{
     k %= n;
     reverse(a, a + n);
     reverse(a, a + k);
